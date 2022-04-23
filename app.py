@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('./index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -42,7 +42,7 @@ def predict():
         data = np.array([[preg, glucose, bp, st, insulin, bmi, dpf, age]])
         my_prediction = classifier.predict(data)
         
-        return render_template('result.html', prediction=my_prediction)
+        return render_template('./result.html', prediction=my_prediction)
 
 if __name__ == '__main__':
     app.run(debug=True)
