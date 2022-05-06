@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/prediction.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Diabetes.</a>
+        <ul class="nav-bar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="prediction.html">predict</a></li>
+            <li><a href="contact.html">contacts</a></li>
+    </header>
+<br><br>
+    <body>
+        <div class="login">
+            <h1> Predicting Diabetes</h1>
+
+            <form action="{{ url_for('predict')}}" method="post">
+                <input class="form-input" type="text" name="pregnancies"
+                    placeholder="Number of Pregnancies eg. 0 for male"><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
+                <input class="form-input" type="text" name="bloodpressure"
+                    placeholder="Blood Pressure (mmHg) eg. 80"><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+            <br>
+            <br>
+            {{ prediction_text }}
+        </div>
+        <section>
+            <h1 id="head">Education & Support Programs</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="images/2021_da_website_program_tile_dis_2.0.jpg">
+                    <h4>Diabetes in schools</h4>
+                </div>
+                <div class="item"><img src="images/2021_da_website_program_tile_ff_2.0.jpg">
+                    <h4>Foot forward</h4>
+                </div>
+                <div class="item"><img src="images/2021_da_website_program_tile_ks_2.0.jpg">
+                    <h4>Keep sight</h4>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+
+            <div class="box-container">
+    
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> doctors </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> book </a>
+    
+                </div>
+    
+                <div class="box">
+                    <h3>our services</h3>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Living with diabetes </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Advocacy </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Health Professionals </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i> Research </a>
+                </div>
+    
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> owner145@gmail.com </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> user123@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> mansurah, Egypt - 400104 </a>
+                </div>
+    
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        © Copyright EstateAgency All Rights Reserved.
+                    </p>
+                   
+                </div> 
+    
+            </div>
+    
+    
+        </section>
+
+    </body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/predict.js"></script>
+</body>
+
+</html>

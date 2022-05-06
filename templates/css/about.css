@@ -1,0 +1,144 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: relative;
+    background-color: rgb(239, 234, 234);
+    top: 0;
+    left: 0;
+    width: 86.81%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s; 
+}
+
+header .logo{
+    color: #1c4a9f;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav-bar li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c4a9f;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.nav-bar li {
+    display:inline;
+    list-style-type: none;
+    margin-left: 10px;
+}
+.nav-bar li a:hover{
+    color:white;
+}
+.column {
+    float: left;
+    padding: 15px;
+  }
+  .clearfix{
+      position: absolute;
+      
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .menu {
+    width: 150%;
+  }
+  
+  .content {
+    width: 20%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+.typography{
+    position: relative;
+    left: 400px;
+    width: 60%;
+    height:80%;
+}
+h1{
+    color: #1c4a9f;
+    font-family: Poppins,Arial,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+p,ul{
+    font-size: 17px;
+    margin: 0px 0px 16px;
+    color: #3d3c3c;
+    font-weight: lighter;
+}
+p{
+    word-spacing:1px;
+}
+
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:20px;
+    background-color: rgb(239, 234, 234);
+}
+.footer .box{
+    margin-left: 60px;
+}
+
+.footer .box-container .box h3{
+    font-size: 20px;
+    color: #1c4a9f;
+    padding: .7rem 0;
+    margin-left: 30px;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size:18px;
+    color:var(--light-color);
+    padding: 10px 0;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: 6px;
+    color: #3d3c3c;
+    font-size: 17px;
+
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:1rem;
+    color: blue;
+}
+ .footer-bottom{
+    background-color: rgb(239, 234, 234);
+}
