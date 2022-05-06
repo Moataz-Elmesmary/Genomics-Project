@@ -8,7 +8,6 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
-from pyngrok import ngrok
 import sys
 
 
@@ -54,8 +53,4 @@ def predict():
         print("Oops!", sys.exc_info()[0], "occurred.")
 
 if __name__ == '__main__':
-    # Open a HTTP tunnel on the default port 80
-    public_url = ngrok.connect()
-    ssh_url = ngrok.connect(22, "tcp")
-    print(public_url)
-    app.run(port=80)
+    app.run(debug=True)
