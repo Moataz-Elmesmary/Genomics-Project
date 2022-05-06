@@ -1,4 +1,8 @@
-# Genomics Project
+# Genomics Project (Diabetes Prediction)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#-contributors-)
+<img src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+
 ## Diabetes Prediction :arrow_down_small:
 
 We Present a Web App depends on Machine Learning for quickly and accurately diagnose.
