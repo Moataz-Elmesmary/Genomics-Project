@@ -22,12 +22,12 @@ classifier = pickle.load(open(filename, 'rb'))
 # In[44]:
 
 
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='', static_folder='./templates')
 
 @app.route('/')
 def home():
     try:
-        return render_template('./index.html')
+        return render_template('./home.html')
     except:
         print("Oops!", sys.exc_info()[0], "occurred.")
 
