@@ -1,8 +1,10 @@
 # Genomics Project
 ## Diabetes Prediction :arrow_down_small:
 
-Web App depends on ML in Detecting diabetes in its early stages so that doctors can treat it.
-### *Still Working on it* :memo:
+We Present a Web App depends on Machine Learning for quickly and accurately diagnose.
+As we know, ML can help people make a preliminary judgement about diabetes mellitus according to their daily physical examination data and it can serve as a reference for doctors.
+Also, our site provides some important information about the disease and its symptoms.
+###  :memo:
 
 ## Contributors 👤 
 <table>
