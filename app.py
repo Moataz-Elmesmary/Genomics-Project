@@ -29,7 +29,8 @@ def home():
     try:
         return render_template('./home.html')
     except:
-        print("Oops!", sys.exc_info()[0], "occurred.")
+        ops = str(sys.exc_info())
+        return('<h1>Oops!' + ops + 'occurred</h1>')
 
 
 @app.route('/predict', methods=['POST'])
@@ -44,13 +45,12 @@ def predict():
             bmi = request.form['bmi']
             dpf = request.form['dpf']
             age = request.form['age']
-            
             data = np.array([[preg, glucose, bp, st, insulin, bmi, dpf, age]])
             my_prediction = classifier.predict(data)
-            
             return render_template('./result.html', prediction=my_prediction)
     except:
-        print("Oops!", sys.exc_info()[0], "occurred.")
+        ops = str(sys.exc_info())
+        return('<h1>Oops!' + ops + 'occurred</h1>')
 
 if __name__ == '__main__':
     app.run(debug=True)
