@@ -1,6 +1,6 @@
 # Genomics Project (Diabetes Prediction)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#-contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#-Contributors-)
 <img src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
 
 ## Diabetes Prediction :arrow_down_small:
@@ -15,6 +15,7 @@ Also, our site provides some important information about the disease and its sym
 ###  
 
 ## Contributors 👤
+
 <table>
   <tr>    
     <td align="center"><a href="https://github.com/Moataz-Elmesmary"><img src="https://avatars.githubusercontent.com/u/92026137?v=4" width="100px;" alt=""/><br /><sub><b>Moataz Elmesmary</b></sub></a><br /><a href="https://github.com/Moataz-Elmesmary/Genomics-Project/commits/main" title="Code">💻ML</a></td>
