@@ -13,7 +13,7 @@ Also, our site provides some important information about the disease and its sym
 ![ezgif-1-527aeaaad2](https://user-images.githubusercontent.com/92026137/167228981-d9b6a6b5-3eff-40bb-9bf8-ab6f899ff914.gif)
 
 ## :pushpin: [The Video :video_camera:](https://www.youtube.com/watch?v=d3PkzNUi6_I)<br> 
-&emsp;&emsp;&emsp; The project is explained there. Just raise up the voice and open its English subtitles (Translation) *-it was made manually-* :heavy_check_mark:
+The project is explained there. Just raise up the voice and open its English subtitles (Translation) *-it was made manually-* :heavy_check_mark:
 
 
 
